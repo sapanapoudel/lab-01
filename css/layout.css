@@ -1,18 +1,8 @@
 
-/* @media all and (max-width: 960px) {
-  div{
-    border: 1px solid black;
-    background: purple;
-    
-  }
-} */
 
 div{
-  outline-color:red;
-  outline-style: dashed;
-  /* border: 1px solid black; */
-  /* background: purple; */
-  
+  border: 1px solid black; 
+  background: skyblue;
 }
 #a {
   width: 960px;
@@ -40,3 +30,26 @@ div{
    height: 150px;
    float: right;
  }
+
+ @media all and (min-width: 480px) and (max-width: 767px) {
+  #a {
+    width: 480px;
+    height: 75px;
+  }
+  #b {
+    width: 480px;
+    height: 150px
+  }
+  #c, #d {
+    width: 480px;
+    height: 125px;
+  }
+  #e, #f, #g, #h {
+    width: 240px;
+    height: 250px;
+   }
+  #i {
+    width: 480px;
+    height: 80px;
+   }
+}
