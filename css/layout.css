@@ -2,6 +2,7 @@
 @media screen and (min-width:1px )and (max-width:480px)  {
   body {
     width: 480px;
+    height: 100vh;
     margin: auto;
   }
   #a {
@@ -10,16 +11,21 @@
   }
   #b {
     width: 480px;
-    height: 150px
+    height: 150px;
   }
   #c, #d {
     width: 480px;
     height: 125px;
   }
+ article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;  
+  }
   #e, #f, #g, #h {
     width: 240px;
     height: 250px;
-    float: right;
    }
   #i {
     width: 480px;
@@ -59,6 +65,7 @@
 @media screen and (min-width:481px) and (max-width:959px) {
   body {
     width: 600px;
+    height: 100vh;
     margin: auto;
   }
 
@@ -73,12 +80,16 @@
   #c, #d {
     width: 600px;
     height: 125px;
-    float: right;
+  }
+  article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;  
   }
   #e, #f, #g, #h {
     width: 300px;
     height: 250px;
-    float: right;
    }
   #i {
     width:600px;
@@ -117,8 +128,11 @@
 /*Desktop view*/
 @media screen and (min-width:960px) {
   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 960px;
-    margin: auto;
+    margin: auto; 
   }
   #a {
     width: 960px;
@@ -127,25 +141,37 @@
    #b {
      width: 200px;
      height: 600px;
-     float: left;
    }
    #c , #d {
      width: 380px;
      height: 300px;
-     float: right;
    }
   
    #e, #f, #g, #h {
     width: 190px;
     height: 300px;
-    float: right;
    }
-  
+
    #i {
      width:960px;
      height: 150px;
-     float: right;
    }
+   main {
+     display: flex;
+     flex-direction: row;
+   }
+   section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+   article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+   
+   /* Background color */
    #a {
     background-color: goldenrod;
   }
