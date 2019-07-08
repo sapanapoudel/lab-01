@@ -1,37 +1,9 @@
-
-
-div{
-  border: 1px solid black; 
-  background: skyblue;
-}
-#a {
-  width: 960px;
-  height: 100px;
-}
- #b {
-   width: 200px;
-   height: 600px;
-   float: left;
- }
- #c , #d {
-   width: 380px;
-   height: 200px;
-   float: right;
- }
-
- #e, #f, #g, #h {
-  width: 190px;
-  height: 250px;
-  float: right;
- }
-
- #i {
-   width:760px;
-   height: 150px;
-   float: right;
- }
-
- @media all and (min-width: 480px) and (max-width: 767px) {
+/* mobile view*/
+@media screen and (min-width:1px )and (max-width:480px)  {
+  body {
+    width: 480px;
+    margin: auto;
+  }
   #a {
     width: 480px;
     height: 75px;
@@ -47,9 +19,160 @@ div{
   #e, #f, #g, #h {
     width: 240px;
     height: 250px;
+    float: right;
    }
   #i {
     width: 480px;
     height: 80px;
    }
+   #a {
+    background-color: blue;
+  }
+  #b {
+    background-color: salmon;
+  }
+  #c {
+    background-color: blueviolet;
+  }
+  #d {
+    background-color: aquamarine;
+  }
+  #e {
+    background-color: brown;
+  }
+  #f {
+    background-color: cornsilk;
+  }
+  #g {
+    background-color:yellowgreen;
+  }
+  #h {
+    background-color: aqua;
+  }
+  #i {
+    background-color: lightpink;
+  }
+
 }
+
+/*Tablet view*/
+@media screen and (min-width:481px) and (max-width:959px) {
+  body {
+    width: 600px;
+    margin: auto;
+  }
+
+  #a {
+    width: 600px;
+    height: 75px;
+  }
+  #b {
+    width: 600px;
+    height: 150px
+  }
+  #c, #d {
+    width: 600px;
+    height: 125px;
+    float: right;
+  }
+  #e, #f, #g, #h {
+    width: 300px;
+    height: 250px;
+    float: right;
+   }
+  #i {
+    width:600px;
+    height: 80px;
+   }
+   #a {
+    background-color: red;
+  }
+  #b {
+    background-color: green;
+  }
+  #c {
+    background-color:yellow;
+  }
+  #d {
+    background-color:pink;
+  }
+  #e {
+    background-color:gray;
+  }
+  #f {
+    background-color: purple;
+  }
+  #g {
+    background-color: blue;
+  }
+  #h {
+    background-color: violet;
+  }
+  #i {
+    background-color: orange;
+  }
+
+}
+
+/*Desktop view*/
+@media screen and (min-width:960px) {
+  body {
+    width: 960px;
+    margin: auto;
+  }
+  #a {
+    width: 960px;
+    height: 100px;
+  }
+   #b {
+     width: 200px;
+     height: 600px;
+     float: left;
+   }
+   #c , #d {
+     width: 380px;
+     height: 300px;
+     float: right;
+   }
+  
+   #e, #f, #g, #h {
+    width: 190px;
+    height: 300px;
+    float: right;
+   }
+  
+   #i {
+     width:960px;
+     height: 150px;
+     float: right;
+   }
+   #a {
+    background-color: goldenrod;
+  }
+  #b {
+    background-color: mediumaquamarine;
+  }
+  #c {
+    background-color: green;
+  }
+  #d {
+    background-color: yellow;
+  }
+  #e {
+    background-color: darkorange;
+  }
+  #f {
+    background-color: darkorchid;
+  }
+  #g {
+    background-color: darkcyan;
+  }
+  #h {
+    background-color: darkgrey;
+  }
+  #i {
+    background-color: purple;
+  }
+
+}
+
